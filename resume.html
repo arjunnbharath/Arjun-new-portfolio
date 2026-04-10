@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae | Arjun Bharath</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { padding-top: 0; }
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 5rem 5%;
+            background-color: var(--bg-color);
+            min-height: 100vh;
+        }
+        .resume-header {
+            border-bottom: 4px solid var(--text-color);
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+        .resume-name {
+            font-family: var(--font-heading);
+            font-size: clamp(4rem, 10vw, 8rem);
+            line-height: 0.85;
+            margin-bottom: 1rem;
+        }
+        .resume-contact {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: #444;
+        }
+        .resume-section-title {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            border-bottom: 2px solid var(--border-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+        .resume-block {
+            margin-bottom: 3rem;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.2rem;
+        }
+        .job-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        .job-role {
+            font-weight: 600;
+            color: #444;
+            margin-bottom: 0.8rem;
+        }
+        .job-list {
+            padding-left: 1.5rem;
+        }
+        .job-list li {
+            margin-bottom: 0.5rem;
+        }
+        .btn-group {
+            text-align: center;
+            margin-top: 5rem;
+        }
+        .btn-action {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            padding: 1rem 2.5rem;
+            display: inline-block;
+            margin: 0.5rem;
+            cursor: pointer;
+            border: 2px solid var(--text-color);
+            transition: all 0.3s ease;
+        }
+        .btn-back {
+            background-color: transparent;
+            color: var(--text-color);
+        }
+        .btn-print {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+        }
+        .btn-back:hover {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+        }
+        .btn-print:hover {
+            background-color: transparent;
+            color: var(--text-color);
+        }
+        @media print {
+            .btn-group { display: none; }
+            .resume-container { padding: 0; }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="resume-container">
+        <div class="resume-header">
+            <h1 class="resume-name">ARJUN BHARATH</h1>
+            <p class="resume-contact">arjun200118bharath@gmail.com &nbsp;|&nbsp; linkedin.com/in/arjun-bharath-sr/</p>
+        </div>
+        
+        <div class="resume-block">
+            <h2 class="resume-section-title">SUMMARY</h2>
+            <p>Salesforce Marketing Cloud Developer bridging full-stack capabilities with dynamic brand experiences. Specializing in AMPscript, Journey Builder, & Automation Studio to enhance customer engagement, streamline personalization pipelines, and maximize ROI in automated marketing campaigns.</p>
+        </div>
+
+        <div class="resume-block">
+            <h2 class="resume-section-title">WORK EXPERIENCE</h2>
+            <div style="margin-bottom: 2rem;">
+                <div class="job-header">
+                    <h3 class="job-title">G10X Technology Private Limited</h3>
+                    <span style="font-weight: 600;">Apr 2024 - Present</span>
+                </div>
+                <p class="job-role">Software Engineer</p>
+                <ul class="job-list">
+                    <li>Developed and customized dynamic email templates in Salesforce Marketing Cloud.</li>
+                    <li>Designed and managed multi-touch Journey Builder implementations to automate workflows.</li>
+                    <li>Collaborated on API integrations and automation calls to streamline data marketing processes.</li>
+                    <li>Delivered personalized brand experiences leveraging SFMC Personalization features.</li>
+                </ul>
+            </div>
+            <div>
+                <div class="job-header">
+                    <h3 class="job-title">QUEST Innovative Solutions</h3>
+                    <span style="font-weight: 600;">May 2023 - Jan 2024</span>
+                </div>
+                <p class="job-role">Java Full Stack Web Developer Trainee</p>
+                <ul class="job-list">
+                    <li>Developed and maintained responsive websites using Java, Spring Boot, and front-end architectures.</li>
+                    <li>Built multiple full-stack projects showcasing robust database modeling and UI optimization.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resume-block">
+            <h2 class="resume-section-title">CERTIFICATIONS</h2>
+            <ul class="job-list">
+                <li>Salesforce Certified Marketing Cloud Email specialist 2025</li>
+                <li>Salesforce Certified Agentforce Specialist 2025</li>
+                <li>Salesforce Certified AI Associate 2025</li>
+                <li>Oracle Certified Generative AI professional 2025</li>
+                <li>Oracle Certified OCI Data Science Professional 2025</li>
+            </ul>
+        </div>
+
+        <div class="resume-block">
+            <h2 class="resume-section-title">EDUCATION</h2>
+            <ul class="job-list">
+                <li><strong>B.tech in Computer Science</strong> - APJ Abdul Kalam Technological University, 2019</li>
+                <li><strong>Senior Secondary (Computer Science)</strong> - St.Mary's HSS Pattom, 2017</li>
+            </ul>
+        </div>
+
+        <div class="resume-block">
+            <h2 class="resume-section-title">SKILLS</h2>
+            <ul class="job-list">
+                <li><strong>Technical:</strong> Salesforce Marketing Cloud, AMPscript, SQL, HTML/CSS, JS, Java, Journey Builder.</li>
+                <li><strong>Professional:</strong> Problem-Solving, Team Collaboration, Time Management, Workflow Adaptability.</li>
+            </ul>
+        </div>
+
+        <div class="btn-group">
+            <a href="index.html" class="btn-action btn-back">&larr; BACK TO PORTFOLIO</a>
+            <button onclick="window.print()" class="btn-action btn-print">PRINT PDF</button>
+        </div>
+    </div>
+
+</body>
+</html>
