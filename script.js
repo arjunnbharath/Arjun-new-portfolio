@@ -40,6 +40,40 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+
+
+    // Works Reel Navigation
+    const worksReel = document.getElementById('works-reel');
+    const worksPrev = document.getElementById('works-prev');
+    const worksNext = document.getElementById('works-next');
+
+    if (worksReel && worksPrev && worksNext) {
+        const slides = worksReel.querySelectorAll('.works-slide');
+        let currentIndex = 0;
+        const visibleSlides = () => window.innerWidth <= 900 ? 1 : 3;
+        const maxIndex = () => Math.max(0, slides.length - visibleSlides());
+
+        const updateReel = () => {
+            const slideWidth = slides[0].offsetWidth;
+            worksReel.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        };
+
+        worksPrev.addEventListener('click', () => {
+            currentIndex = Math.max(0, currentIndex - 1);
+            updateReel();
+        });
+
+        worksNext.addEventListener('click', () => {
+            currentIndex = Math.min(maxIndex(), currentIndex + 1);
+            updateReel();
+        });
+
+        window.addEventListener('resize', () => {
+            currentIndex = Math.min(currentIndex, maxIndex());
+            updateReel();
+        });
+    }
+
     // 1. Initial Load Hero Animation
     const heroTimeline = gsap.timeline();
 
@@ -263,6 +297,34 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         pModal.addEventListener('click', (e) => {
             if(e.target === pModal) pModal.classList.remove('show');
+        });
+    }
+
+    // Interactive Flashlight Marquee Logic
+    const interDiv = document.getElementById('interactive-divider');
+    const fgTrack = document.getElementById('fg-track');
+    
+    if (interDiv && fgTrack) {
+        interDiv.addEventListener('mousemove', (e) => {
+            const rect = interDiv.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            // On mouse move, smoothly update the clip path to follow cursor
+            gsap.to(fgTrack, {
+                clipPath: `circle(150px at ${x}px ${y}px)`,
+                duration: 0.3,
+                ease: "power2.out"
+            });
+        });
+
+        interDiv.addEventListener('mouseleave', () => {
+            // When mouse leaves, collapse the flashlight
+            gsap.to(fgTrack, {
+                clipPath: `circle(0px at 50% 50%)`,
+                duration: 0.6,
+                ease: "power2.out"
+            });
         });
     }
 });

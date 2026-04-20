@@ -9,22 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     
     <nav class="navbar">
         <a href="#" class="nav-brand">
-            <div class="nav-gif-wrapper">
-                <img src="gif/e2cef156d0df0260c6bff65c5299db19.gif" alt="Logo" class="nav-gif">
-            </div>
             <span class="nav-arjun">ARJUN </span>
             <span class="nav-bharath">BHARATH</span>
         </a>
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
         <div class="nav-links" id="nav-links">
             <ul class="nav-list">
                 <li><a href="#about" class="scroll-link">About</a></li>
@@ -39,6 +32,15 @@
                 <a href="https://linkedin.com/in/arjun-bharath-sr/" target="_blank">Ln.</a>
                 <a href="#" target="_blank">Dc.</a>
                 <a href="#" target="_blank">Ig.</a>
+            </div>
+        </div>
+        <!-- Right side: toggle + hamburger grouped -->
+        <div class="nav-right">
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
@@ -117,6 +119,55 @@
                 </div>
             </section>
 
+            <!-- Interactive Flashlight Marquee Divider -->
+            <div class="interactive-divider" id="interactive-divider">
+                <div class="marquee-track">
+                    <div class="marquee-content bg-text">
+                        <span>SALESFORCE</span><span class="marquee-dot">◆</span>
+                        <span>MARKETING CLOUD</span><span class="marquee-dot">◆</span>
+                        <span>AMPSCRIPT</span><span class="marquee-dot">◆</span>
+                        <span>JOURNEY BUILDER</span><span class="marquee-dot">◆</span>
+                        <span>JAVA</span><span class="marquee-dot">◆</span>
+                        <span>SPRING BOOT</span><span class="marquee-dot">◆</span>
+                        <span>REACT</span><span class="marquee-dot">◆</span>
+                        <span>HTML / CSS</span><span class="marquee-dot">◆</span>
+                    </div>
+                    <div class="marquee-content bg-text" aria-hidden="true">
+                        <span>SALESFORCE</span><span class="marquee-dot">◆</span>
+                        <span>MARKETING CLOUD</span><span class="marquee-dot">◆</span>
+                        <span>AMPSCRIPT</span><span class="marquee-dot">◆</span>
+                        <span>JOURNEY BUILDER</span><span class="marquee-dot">◆</span>
+                        <span>JAVA</span><span class="marquee-dot">◆</span>
+                        <span>SPRING BOOT</span><span class="marquee-dot">◆</span>
+                        <span>REACT</span><span class="marquee-dot">◆</span>
+                        <span>HTML / CSS</span><span class="marquee-dot">◆</span>
+                    </div>
+                </div>
+
+                <div class="marquee-track fg-track" id="fg-track">
+                    <div class="marquee-content fg-text">
+                        <span>SALESFORCE</span><span class="marquee-dot">◆</span>
+                        <span>MARKETING CLOUD</span><span class="marquee-dot">◆</span>
+                        <span>AMPSCRIPT</span><span class="marquee-dot">◆</span>
+                        <span>JOURNEY BUILDER</span><span class="marquee-dot">◆</span>
+                        <span>JAVA</span><span class="marquee-dot">◆</span>
+                        <span>SPRING BOOT</span><span class="marquee-dot">◆</span>
+                        <span>REACT</span><span class="marquee-dot">◆</span>
+                        <span>HTML / CSS</span><span class="marquee-dot">◆</span>
+                    </div>
+                    <div class="marquee-content fg-text" aria-hidden="true">
+                        <span>SALESFORCE</span><span class="marquee-dot">◆</span>
+                        <span>MARKETING CLOUD</span><span class="marquee-dot">◆</span>
+                        <span>AMPSCRIPT</span><span class="marquee-dot">◆</span>
+                        <span>JOURNEY BUILDER</span><span class="marquee-dot">◆</span>
+                        <span>JAVA</span><span class="marquee-dot">◆</span>
+                        <span>SPRING BOOT</span><span class="marquee-dot">◆</span>
+                        <span>REACT</span><span class="marquee-dot">◆</span>
+                        <span>HTML / CSS</span><span class="marquee-dot">◆</span>
+                    </div>
+                </div>
+            </div>
+
             <section class="section-education gs-reveal" id="education">
                 <h2 class="section-title text-center">EDUCATION <span class="number">03</span></h2>
                 <div class="edu-timeline">
@@ -167,46 +218,52 @@
                 </div>
             </section>
 
-            <!-- Projects Accordion Section -->
-            <section class="section-projects accordion-theme gs-reveal" id="projects">
-                <div class="accordion-container">
-                    <!-- Static Intro slice -->
-                    <div class="accordion-intro">
-                        <h3>PROJECT HIGHLIGHTS</h3>
-                        <p>A curated collection of full stack builds and dynamic Salesforce campaigns.</p>
-                        <a href="projects.html" class="view-all">VIEW ALL &rarr;</a>
+            <!-- Works Section (Cinematic Gallery) -->
+            <section class="section-works gs-reveal" id="projects">
+                <div class="works-layout">
+                    <!-- Left: Title -->
+                    <div class="works-header">
+                        <h2 class="works-title">WORKS</h2>
                     </div>
-                    
-                    <!-- Accordion Gallery Slices -->
-                    <div class="accordion-gallery">
-                        <div class="accordion-slice active">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="SFMC Campaign">
-                            <div class="slice-content">
-                                <h3>SFMC CAMPAIGNS</h3>
-                                <p>Automated customer journeys & AMPscript functionality.</p>
+                    <!-- Center: Horizontal Image Reel -->
+                    <div class="works-reel-wrapper">
+                        <div class="works-reel" id="works-reel">
+                            <div class="works-slide">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="SFMC Campaign">
+                                <div class="works-slide-label">SFMC CAMPAIGNS</div>
+                            </div>
+                            <div class="works-slide">
+                                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Full Stack">
+                                <div class="works-slide-label">FULL STACK APP</div>
+                            </div>
+                            <div class="works-slide">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Analytics">
+                                <div class="works-slide-label">ANALYTICS DASHBOARD</div>
+                            </div>
+                            <div class="works-slide">
+                                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="B2B E-Commerce">
+                                <div class="works-slide-label">B2B E-COMMERCE</div>
+                            </div>
+                            <div class="works-slide">
+                                <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Journey Builder">
+                                <div class="works-slide-label">JOURNEY BUILDER</div>
                             </div>
                         </div>
-                        <div class="accordion-slice">
-                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Full Stack">
-                            <div class="slice-content">
-                                <h3>FULL STACK APP</h3>
-                                <p>Responsive Java & Spring Boot application architecture.</p>
-                            </div>
+                    </div>
+                    <!-- Right: Arrows + Tagline + Link -->
+                    <div class="works-tagline">
+                        <!-- Navigation Arrows moved here so they never overlap slide labels -->
+                        <div class="works-nav">
+                            <button class="works-arrow" id="works-prev" aria-label="Previous">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                            </button>
+                            <button class="works-arrow" id="works-next" aria-label="Next">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                            </button>
                         </div>
-                        <div class="accordion-slice">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Data Analytics">
-                            <div class="slice-content">
-                                <h3>ANALYTICS DASHBOARD</h3>
-                                <p>Interactive data visualization interface.</p>
-                            </div>
-                        </div>
-                        <div class="accordion-slice">
-                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="B2B E-commerce">
-                            <div class="slice-content">
-                                <h3>B2B E-COMMERCE</h3>
-                                <p>Robust purchasing platform with dynamic pricing.</p>
-                            </div>
-                        </div>
+                        <p>IN EVERY LINE, EVERY STROKE — SKILL AND CHARACTER.</p>
+                        <p>MY PROJECTS ARE YOUR UNIQUENESS IN ITS PUREST FORM.</p>
+                        <a href="projects.html" class="works-view-all">VIEW ALL &rarr;</a>
                     </div>
                 </div>
             </section>
